@@ -18,7 +18,7 @@ Professional-grade TTS using Google's Gemini 2.5 Flash model for hyper-realistic
 
 Get Free Key: Create an API key at Google AI Studio.
 
-Configure: Open text_to_speech.html, find line ~377, and paste your key:
+Configure: Open text_to_speech.html,paste your key:
 
 const apiKey = "YOUR_API_KEY_HERE";
 
@@ -30,5 +30,6 @@ Run: Open the file in your browser.
 Never upload this file to GitHub with your real API key. Always revert it to the placeholder text first.
 
 📄 License
+
 
 Open source for personal and educational use.
