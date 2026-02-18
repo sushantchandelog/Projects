@@ -1,0 +1,23 @@
+# Adult Census Income Classification
+
+This repository contains a complete machine learning workflow to predict income levels using the **Adult Census Income** dataset (often referred to as the "UCI Adult" dataset). The goal is to classify individuals into two groups: those earning `<=50K` and those earning `>50K` per year.
+
+## 🚀 Project Overview
+The project follows these key steps:
+1. **Data Acquisition:** Automating dataset download using `kagglehub`.
+2. **Exploratory Data Analysis (EDA):** Visualizing distributions, handling missing values (represented as `?`), and analyzing feature correlations.
+3. **Data Preprocessing:** Cleaning categorical features and encoding the target variable.
+4. **Modeling:** Implementing a **Decision Tree Classifier**.
+5. **Optimization:** Fine-tuning the model using `GridSearchCV` to find the best hyperparameters for depth and leaf nodes.
+
+## 📊 Key Insights from EDA
+- **Imbalance:** The dataset is imbalanced, with roughly 76% of individuals earning ≤50K and 24% earning >50K.
+- **Top Correlations:** `education.num`, `age`, and `hours.per.week` show the strongest positive correlation with higher income.
+- **Marital Status:** Individuals in the "Married-civ-spouse" category have a significantly higher probability of earning >50K compared to other groups.
+
+## 🛠️ Performance Metrics
+After hyperparameter tuning, the best model achieved:
+- **Test Accuracy:** ~85.3%
+- **Precision:** ~76.6%
+- **F1 Score:** ~0.648
+- **Optimal Depth:** 10
